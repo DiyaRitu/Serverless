@@ -1,0 +1,22 @@
+{
+  "unknown": {
+    "versionFramework": "4.18.0",
+    "error": {
+      "message": "Configuration file not found",
+      "stack": "Error: Configuration file not found\n    at _CoreRunner.run (file:///C:/Users/rajdi/.serverless/releases/4.18.0/package/dist/sf-core.js:1126:8287)\n    at route (file:///C:/Users/rajdi/.serverless/releases/4.18.0/package/dist/sf-core.js:1603:2891)\n    at async Object.run (file:///C:/Users/rajdi/.serverless/releases/4.18.0/package/dist/sf-core.js:1604:3661)\n    at async run2 (file:///C:/Users/rajdi/.serverless/releases/4.18.0/package/dist/sf-core.js:1604:4815)",
+      "code": "CONFIG_FILE_NOT_FOUND"
+    },
+    "command": [
+      "plugin",
+      "install"
+    ],
+    "options": {
+      "n": "serverless-offline"
+    },
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}

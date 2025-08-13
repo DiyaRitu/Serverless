@@ -1,0 +1,27 @@
+{
+  "unknown": {
+    "versionFramework": "4.18.0",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": true,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "command": [
+      "login"
+    ],
+    "options": {},
+    "orgId": "1bacd16e-0078-4009-a951-504a941ef6c4",
+    "orgName": "diyasingh",
+    "userId": "X9CQhVtZ3FWDDsW0ns",
+    "userName": "diyasingh",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}

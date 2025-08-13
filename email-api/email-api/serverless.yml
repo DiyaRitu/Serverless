@@ -1,0 +1,42 @@
+service: email-api
+frameworkVersion: '4'
+
+provider:
+  name: aws
+  runtime: python3.12
+  region: us-east-1
+  environment:
+    # Example default (replace when deploying). You can remove these if you prefer to set env vars locally.
+    SENDER_EMAIL: "your_verified_sender@example.com"
+    EMAIL_MODE: "offline"   # offline | smtp | ses
+    SES_REGION: "us-east-1"
+
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - ses:SendEmail
+            - ses:SendRawEmail
+          Resource: "*"
+
+functions:
+  sendEmail:
+    handler: handler.send_email
+    events:
+      - http:
+          path: send-email
+          method: post
+          cors: true
+    timeout: 10
+
+plugins:
+  - serverless-python-requirements
+  - serverless-offline
+
+custom:
+  pythonRequirements:
+    slim: true
+    useStaticCache: true
+  serverless-offline:
+    httpPort: 3000
